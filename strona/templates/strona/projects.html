@@ -1,0 +1,124 @@
+{% extends "strona/base.html" %}
+{% load static %}
+<img src="{% static "strona/images/Kabina.jpg" %}"/>
+
+{% block content %}
+<nav class="menu">
+      <ul>
+        <li><a href="#software">Software</a></li>
+          
+       
+        <li><a href="#antykorozja">Branża antykorozyjna</a>
+          <ul>
+            <li><a href="#kabiny">Kabiny śrutownicze</a></li>
+            <li><a href="#filtrowentylator">Filtrowentylator</a></li>
+            <li><a href="#separatory">Separatory</a></li>
+          </ul>
+        </li>
+        <li><a href="#inne">Inne</a>
+         <ul>
+           <li><a href="#ploter">Ploter mieszający</a></li>
+            <li><a href="#karuzela">Karuzela frezarki</a></li>
+            <li><a href="#szafa">Szafa grzewcza</a></li>
+         </ul>
+          
+        </li>
+      </ul>
+    </nav>
+    <body>
+    <main>
+     <div clas=content>
+     <section id="software">
+      <h3>Oprogramowanie używane do prac projektowych</h3>
+       <p><a href="https://zw3d.com.pl/moduly-zw3d/program-3d-standard/" target="_blank"><strong>ZW3D 2021 Standard</strong></a> -program CAD do projektowania 3D – zaawansowane modelowanie powierzchniowe</p>
+       <p><a href="https://www.zwcad.pl/zwcad-2019-opis-skrocony.html" target="_blank"><strong>ZWCAD</strong></a> -program CAD do projektowania 2D</p>
+     </section>
+     <section id="antykorozja">
+      
+      <div id="kabiny">
+      <h3>Przykładowe projekty wykonywane w branży antykorozyjnej</h3>
+      <article>
+        <h4>Kabiny do śrutowania ręczne i automatyczne</h4>
+        <figure>
+          <img src="{% static "strona/images/Kabina.jpg" %}"/>
+          <figcaption>Kabina śrutownicza, w której pracownicy znajdują się poza obszarem robaczym (na zewnątrz kabiny) </figcaption>
+        </figure>
+        <figure>
+          <img src="{% static "strona/images/Kabina_s2.jpg" %}"/>
+          <figcaption>Kabina śrutownicza, w której praca wykonywana jest automatycznie za pomocą ramienia robota </figcaption>
+        </figure>
+        </article>  
+        </div>
+        
+        
+        <div id="filtrowentylator">
+        <article>
+        <h4>Filtrowentylator o wydajności 20 000m<sup>3</sup>/h</h4>
+        <figure>
+          <img src="{% static "strona/images/Filtrowentylator.jpg" %}"/>
+          
+        </figure>
+        <p>Jest to urządzenie, którego zadaniem jest odpylanie powietrza wewnątrz obszaru roboczego. Króćce po bokach urządzenia podłączane są za pomocą rur wentylacyjnych do miejsc, z których ma być odsysane zanieczyszczone powietrze. Wentylator wytwarza podciśnienie i wyciąga powietrze do komory z filtrami. Pył i inne odpady zatrzymują się na filtrach patronowych a czyste powietrze wyrzucane jest na zewnątrz. Urządzenie wyposarzone jest w automatyczny system strzepywania pyłu z filtrów do kubłów pod spodem </p>
+          </article>
+       </div>
+       
+       <div id="separatory">
+       
+        <article>
+        <h4>Urządzenia separujące ścierniwo od zanieczyszczeń</h4>
+        <figure>
+          <img src="{% static "strona/images/Cyklon.jpg" %}"/>
+          <figcaption>Cyklon podłączany do filtrowentylatora</figcaption>
+        </figure>
+        <p>Ścierniwo i zanieczyszcznia wraz z powietrzem wlatują do walcowej obudowy cyklona. Dzięki sile odśrodkowej cięższe cząsteczki ścierniwa opadają na dól do zbiornika.<br>
+        Lżejsze cząsteczki pyłu wylatują gróą do urządzenia filtrującego </p>
+        <figure>
+          <img src="{% static "strona/images/Separator 1.jpg" %}"/>
+          <figcaption>Separator dynamiczno podmuchowy</figcaption>
+        </figure>
+        <p>W tym urządzeniu zanieczyszczone ścierniwo podawane jest od góry za pomocą transportera kubełkowego. Bęben wewnatrz urządzenia wykonany jest z blachy perforowanej. Śrut i pył opadają na dół. Większe elemnty usuwane są za pomocą ślimaka poza urządzenie. Podczas opadania w dół pył trafia na strumień powietrza, który transportuje go do urządznia filtracyjnego. Cieższy śrut opada swobodnie do zbiornika ciśnieniowego </p><br><br>
+        <p>Przedstawine urządzenia to tylko część unikalnych projektów, które miałem okazję wykonać. Do tego grona można jeszcze zaliczyć duże kabiny śrutownicze, w których pracownicy oczyszczają elmenety wewnątrz kabiny w specjalnej odzieży ochronnej. Transportery kubełkowe, Speparatory oparte na wibracjach oraz wykorzystaniu pola magnetycznego (oddzielanie elementó metalicznych i niematalicznych). Projekty dotyczące wykonania instalacji wentylacyjnej oraz różnego typu oprzyrządowanie wykorzystywane podczas prac śrutowniczych </p>
+        </article>
+       </div>
+     </section>
+     
+     <section id="inne">
+      <h3>Inne urządzenia</h3>
+      <article>
+      <div id="ploter">
+      
+        <h4>Ploter mieszający środek trawiący stal kwasoodporną - projekt z wykorzystaniem środków unijnych</h4>
+        <figure>
+          <img src="{% static "strona/images/Ploter.jpg" %}"/>
+        </figure>
+        <p>Śmigło może poruszać się w układzie kartezjańskim wewnatrz wanny, w której znajdują się elementy trawione </p>
+      </div>
+      <div id="karuzela">  
+        <h4>Karuzela obrotowa</h4>
+        <figure>
+          <img src="{% static "strona/images/Karuzela.jpg" %}"/>
+        </figure>
+        <p>Karuzela ustawiona pod dużą frezarką, na której planowane są korpusy pomp oblanych warstwą poliuretanu</p>
+        </div>
+        <div id="szafa">
+        <h4>Szafy grzewcza</h4>
+        <figure>
+          <img src="{% static "strona/images/szafa grzewcza.jpg" %}"/>
+        </figure>
+        <p>Szafy grzewcze wykorzystywane są np. w przemyśle odlewniczym. Wewnatrz szafy panuje wysoka temperatura nawet powyżej 100 &#x2103. Dzięki temu można w niej umieszczać formy dla wstępnego podgrzania oraz trzymać odlewy w celu odpręzania. Szafy można wykonywać w różnych konfiguracjach i o różnych wymiarach wszyskto zależy od potrzeb. Na zdjęciu powyżej przedstawiona jest szafa dla mniejszych elementów. Z możliwością dostępu z obydwu stron. Dodatkowo drzwi podzielne są na mniejsze skrzydła tak aby po ich otwarciu na zewnąrz przedostawało się mniej podgrzanego powietrza.</p><br>
+        </div>
+        <p>Przedstawione powyżej przykłądy to również tylko część innych urządzeń, które miałem przyjemność projektować</p>
+        
+       </article>
+              
+     </section>
+    </div>
+   </main>
+  </body> 
+  <footer>
+    <p>Wszelkie prawa zastrzeżone - BIURO PROJEKTOWE Łukasz Drozd</p>
+     <p>Możesz się ze mną skontkatkować poprzez email:<a href="mailto:bp.lukaszdrozd@gmail.com">bp.lukaszdrozd@gmail.com</a> lub telefon: 533 300 680</p>
+  </footer>
+
+
+{% endblock content %}

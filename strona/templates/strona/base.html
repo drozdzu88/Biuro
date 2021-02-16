@@ -1,0 +1,12 @@
+{% load static %}
+<p><h1>Strona Internetowa Łukasz Drozd</h1></p>
+<p>
+	<a href="{% url 'strona:home' %}">Strona Główna</a>-
+	<a href="{% url 'strona:about_me' %}">O Mnie</a>-
+	<a href="#">Blog</a>-
+	<a href="{% url 'strona:video' %}">Video</a>-
+	<a href="{% url 'strona:projects' %}">Konstrukcje</a>
+</p>
+
+
+{% block content %}{% endblock content %}
