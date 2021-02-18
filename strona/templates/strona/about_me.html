@@ -1,14 +1,29 @@
 {% extends "strona/base.html" %}
+{% load static %}
 
 {% block content %}
-	<h2>Cześć</h2>
-	<p>Jestem absolwentem <a href="https://pg.edu.pl/" target="_blank">Politechnik Gdańskiej</a> wydziału mechanicznego. Tytuł inżyniera otrzymałem w 2012 roku. I od razu znalazłem pracę.<br> Zostałem zatrudniony jako młodszy konstruktor w firmie projektującej linie montażowe silników samochodowych, skrzyń biegów i innych złożonych elementów, których montaż można zautomatyzować. Więcej szczegółów znajdziesz <a href="http://www.nowa-tepro.pl/" target="_blank">tutaj</a>. Pracę w tej firmie uważam za najlepsze studia na jakie mogłem trafić. Naszymi zleceniodawcami były największe firmy z branży automotive. Praca dla tych firm oznaczała konieczność utrzymania najwyższych standardów wykonawczych jak i projektowych. Dlatego tak dobrze przygotowała mnie do pracy w kolejnej firmie<br>
+	<div class="card mb-3" style="max-width: 1200px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static "strona/images/zdjecie.jpg" %}" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">O mnie</h5>
+        <p class="card-text">
+        	<p>Jestem absolwentem <a href="https://pg.edu.pl/" target="_blank">Politechnik Gdańskiej</a> wydziału mechanicznego. Tytuł inżyniera otrzymałem w 2012 roku. I od razu znalazłem pracę.<br> Zostałem zatrudniony jako młodszy konstruktor w firmie projektującej linie montażowe silników samochodowych, skrzyń biegów i innych złożonych elementów, których montaż można zautomatyzować. Więcej szczegółów znajdziesz <a href="http://www.nowa-tepro.pl/" target="_blank">tutaj</a>. Pracę w tej firmie uważam za najlepsze studia na jakie mogłem trafić. Naszymi zleceniodawcami były największe firmy z branży automotive. Praca dla tych firm oznaczała konieczność utrzymania najwyższych standardów wykonawczych jak i projektowych. Dlatego tak dobrze przygotowała mnie do pracy w kolejnej firmie<br>
 
-	<p>Kolejną firmą, w której miałem przyjemność pracować jest <a href="https://www.bemakor.pl/o-firmie" target="_blank">Bemakor</a>. Branża, w której firma się porusza bardzo odbiegała od poprzedniej ale to tylko wzbogaciło moją wiedzę mechaniczą z zakres projektowania. W tej firmie zajmowałem się przede wszystkim projektowaniem urządzeń do obróbki strumieniowo ściernej ale doszły mi również nowe zadania, z którymi nie miałem wcześniej styczności, a mowa tutaj o zarządzaniu i nadzorze działu produkcyjnego. Ujmując to w jedno zdanie. Moi koledzy wykonywali moje projekty a ja pilnowałem, żeby wszystko było zgodnie z planem lub wprowadzałem poprawki do nich gdy okazywał się, że coś można poprawić albo zrobić lepiej. </p>
+			<p>Kolejną firmą, w której miałem przyjemność pracować jest <a href="https://www.bemakor.pl/o-firmie" target="_blank">Bemakor</a>. Branża, w której firma się porusza bardzo odbiegała od poprzedniej ale to tylko wzbogaciło moją wiedzę mechaniczą z zakres projektowania. W tej firmie zajmowałem się przede wszystkim projektowaniem urządzeń do obróbki strumieniowo ściernej ale doszły mi również nowe zadania, z którymi nie miałem wcześniej styczności, a mowa tutaj o zarządzaniu i nadzorze działu produkcyjnego. Ujmując to w jedno zdanie. Moi koledzy wykonywali moje projekty a ja pilnowałem, żeby wszystko było zgodnie z planem lub wprowadzałem poprawki do nich gdy okazywał się, że coś można poprawić albo zrobić lepiej. </p>
 
-	<p>Ostatecznie zdecydowałem się przenieść z Gdańska do Mławy i zasmakować życia w mniejszym mieście z dala od korków i hałasu. Wiązało się z koniecznością założenia własnej działalności. Po jej utworzeniu od razu przeszedłem do pracy wykonując nadal projekty związane z branżą antykorozycją. Prowadzenie własnej firmy dało mi możliwość nawiązania nowych kontaktów i wykonywania innych projektów. Długo nie musiałem czekać i po krótkim czasie zawiązałem współpracę z lokalną firmą wykonującą wyroby z poliuretanu - <a href="https://lubas.com/" target="_blank">Lubas</a>.</p>
+			<p>Ostatecznie zdecydowałem się przenieść z Gdańska do Mławy i zasmakować życia w mniejszym mieście z dala od korków i hałasu. Wiązało się z koniecznością założenia własnej działalności. Po jej utworzeniu od razu przeszedłem do pracy wykonując nadal projekty związane z branżą antykorozycją. Prowadzenie własnej firmy dało mi możliwość nawiązania nowych kontaktów i wykonywania innych projektów. Długo nie musiałem czekać i po krótkim czasie zawiązałem współpracę z lokalną firmą wykonującą wyroby z poliuretanu - <a href="https://lubas.com/" target="_blank">Lubas</a>.</p>
 
-	<p>Jest mi bardzo miło, że zapoznałeś się z moją historią. Zachęcam Cię do przejścia do działu "<a href="Projekty.html" target="_blank">Projekty</a>", w których będziesz miał okazję zobaczyć kilka wybranych urządzeń, które wykonałem. Umieściłem tam też krótki wpis dotyczący oprogramowania, z którego obecnie korzystam. 
+			<p>Jest mi bardzo miło, że zapoznałeś się z moją historią. Zachęcam Cię do przejścia do działu "<a href="Projekty.html" target="_blank">Projekty</a>", w których będziesz miał okazję zobaczyć kilka wybranych urządzeń, które wykonałem. Umieściłem tam też krótki wpis dotyczący oprogramowania, z którego obecnie korzystam. 
 
-	Jeżeli będziesz miał do mnie pytania, możesz się ze mną skontaktować za pomocą formularza w dziale "<a href="Kontakt.html" target="_blank">Kontakty</a>" lub napisać bezpośrednio na maila. </p>
+			Jeżeli będziesz miał do mnie pytania, możesz się ze mną skontaktować za pomocą formularza w dziale "<a href="Kontakt.html" target="_blank">Kontakty</a>" lub napisać bezpośrednio na maila. </p>
+        </p>
+        
+      </div>
+    </div>
+  </div>
+</div>		
 {% endblock content %}

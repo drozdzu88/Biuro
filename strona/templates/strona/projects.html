@@ -1,30 +1,38 @@
 {% extends "strona/base.html" %}
 {% load static %}
-<img src="{% static "strona/images/Kabina.jpg" %}"/>
+
 
 {% block content %}
-<nav class="menu">
-      <ul>
-        <li><a href="#software">Software</a></li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#software">Software</a>
+          </li>
           
-       
-        <li><a href="#antykorozja">Branża antykorozyjna</a>
-          <ul>
-            <li><a href="#kabiny">Kabiny śrutownicze</a></li>
-            <li><a href="#filtrowentylator">Filtrowentylator</a></li>
-            <li><a href="#separatory">Separatory</a></li>
-          </ul>
-        </li>
-        <li><a href="#inne">Inne</a>
-         <ul>
-           <li><a href="#ploter">Ploter mieszający</a></li>
-            <li><a href="#karuzela">Karuzela frezarki</a></li>
-            <li><a href="#szafa">Szafa grzewcza</a></li>
-         </ul>
-          
-        </li>
-      </ul>
-    </nav>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#antykorozja" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Branża antykorozyjna</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#kabiny">Kabiny śrutownicze</a></li>
+              <li><a class="dropdown-item" href="#filtrowentylator">Filtrowentylator</a></li>
+              <li><a class="dropdown-item" href="#separatory">Separatory</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#inne" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Inne</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#ploter">Ploter mieszający</a></li>
+              <li><a class="dropdown-item" href="#karuzela">Karuzela frezarki</a></li>
+              <li><a class="dropdown-item" href="#szafa">Szafa grzewcza</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
     <body>
     <main>
      <div clas=content>
@@ -119,6 +127,7 @@
     <p>Wszelkie prawa zastrzeżone - BIURO PROJEKTOWE Łukasz Drozd</p>
      <p>Możesz się ze mną skontkatkować poprzez email:<a href="mailto:bp.lukaszdrozd@gmail.com">bp.lukaszdrozd@gmail.com</a> lub telefon: 533 300 680</p>
   </footer>
+
 
 
 {% endblock content %}
