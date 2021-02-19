@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'strona',
+    'blog.apps.BlogConfig',
 
     'django.contrib.admin',
     'django.contrib.auth',
