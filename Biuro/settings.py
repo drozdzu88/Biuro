@@ -33,6 +33,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'strona',
     'blog.apps.BlogConfig',
+    'taggit',
+
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -122,3 +124,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'bp.lukaszdrozd@gmail.com'
+EMAIL_HOST_PASSWORD = '-Re8#12z'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
